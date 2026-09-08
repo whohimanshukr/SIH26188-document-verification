@@ -1,2 +1,15 @@
+# Core API
 fastapi
 uvicorn
+python-multipart
+
+# OCR
+paddlepaddle
+paddleocr
+
+# Computer Vision — face detection/recognition (YuNet + SFace via opencv-contrib)
+opencv-contrib-python
+
+# Image processing and numeric
+pillow
+numpy

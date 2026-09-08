@@ -1,19 +1,42 @@
+# Python bytecode and caches
 __pycache__/
 *.py[cod]
+*.pyo
+
+# Virtual environments
 .venv/
-.venv312
+.venv312/
 venv/
+
+# Environment variables / secrets
 .env
 .env.*
 !.env.example
+
+# Test / lint caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# Coverage reports
 .coverage
 htmlcov/
+
+# Editor directories
 .idea/
 .vscode/
 
+# Temporary uploaded files (keep the placeholder)
 uploads/*
 !uploads/.gitkeep
 
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Temporary / ad-hoc test images (never commit personal documents or test faces)
+*.test.jpg
+*.test.jpeg
+*.test.png
+tests/images/
+scratch/
