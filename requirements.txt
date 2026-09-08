@@ -1,1 +1,2 @@
-# Add runtime dependencies as implementation begins.
+fastapi
+uvicorn

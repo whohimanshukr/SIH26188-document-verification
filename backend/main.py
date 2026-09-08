@@ -1,10 +1,16 @@
 """Application entry point for document verification services."""
 
-
-def create_app() -> object:
-    """Return the application instance once the API framework is wired in."""
-    return object()
+from fastapi import FastAPI
 
 
-if __name__ == "__main__":
-    create_app()
+app = FastAPI(title="SIH26188 Document Verification")
+
+
+@app.get("/")
+def read_root() -> dict[str, str]:
+    return {"message": "Document verification API is running"}
+
+
+@app.get("/health")
+def health_check() -> dict[str, str]:
+    return {"status": "ok"}
